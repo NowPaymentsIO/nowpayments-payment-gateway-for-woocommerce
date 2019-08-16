@@ -90,6 +90,7 @@ function clean($value = "") {
 }
 
 //Data
+$base_currencies = ["usd", "eur", "nzd"];
 $total = 0;
 $subtotal = 0;
 $currency = clean($_GET["currency"]);
@@ -119,8 +120,8 @@ if (preg_match("/[A-Z0-9]{7}-[A-Z0-9]{7}-[A-Z0-9]{7}-[A-Z0-9]{7}/", $key)) {
 } else {
 	throwError("Invlaid Nowpayments Api key. Please change your Api key in settings");
 }
-if (strtolower($currency) != "usd") {
-	throwError("Please change your currency to usd");
+if (!in_array(strtolower($currency), $base_currencies)) {
+	throwError("Please change your currency to one of this:\n".implode(', ', $base_currencies));
 }
 if (!isset($items) || $items === NULL) {
 	throwError("Please go back and add items in a cart");
