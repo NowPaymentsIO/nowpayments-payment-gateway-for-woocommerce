@@ -149,7 +149,7 @@ $currencies = $api->getCurrencies();
 $currencies_html = [];
 $i = 0;
 foreach ($currencies["currencies"] as $curr) {								
-	$estimate = $api->getEstimatedPrice($total, "usd", $curr);
+	$estimate = $api->getEstimatedPrice($total, strtolower($currency), $curr);
 	if(isset($estimate["estimated_amount"])) {
 		if($curr == "btc") $tag = "tag";
 		else $tag = "";
@@ -352,7 +352,7 @@ foreach ($currencies["currencies"] as $curr) {
   $('#complete').click(function(e) {
     $('.loading').show();
     var choose = $('.currency.tag');
-    var price_currency = "usd";
+    var price_currency = "<?php echo strtolower($currency); ?>";
     var price_amount = "<?php echo $total; ?>";
     var pay_currency = choose.attr('data-currency');
     var pay_amount = choose.attr('data-amount');

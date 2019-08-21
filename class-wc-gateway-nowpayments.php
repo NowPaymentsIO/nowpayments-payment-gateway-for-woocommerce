@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  *
  * @class 		WC_nowpayments
  * @extends		WC_Gateway_nowpayments
- * @version		0.1.6 beta
+ * @version		0.1.8a beta
  * @package		WooCommerce/Classes/Payment
  * @author 		nowpayments.io based on PayPal module by WooThemes
  */
