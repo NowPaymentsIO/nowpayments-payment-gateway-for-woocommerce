@@ -1,4 +1,4 @@
-# WooCoommerce
+# WooCommerce
 NOWPayments is a service that allows users to [accept online crypto payments](https://nowpayments.io) with numerous supported cryptocurrencies. The service is non-custodial with low transaction fees and extremely simple integration. The crypto payment gateway can be added easily to websites, social media accounts, and the largest e-commerce platforms by using cryptocurrency payment plugins.
 
 Customers will be thrilled to have a place to spend their hard-mined coins, especially since they’re constantly growing in value. Also, the process is much simpler without having to enter credit card info or go through PayPal. The future is crypto, and if your customers prefer a [Bitcoin payment](https://nowpayments.io/supported-coins/bitcoin-payments), you should be among the first to offer this option!
@@ -50,5 +50,5 @@ If you run into any problems, or if you simply wish to discuss something with ou
 
 If you want to get help during the integration, contact our Business Development Department at [@xenaNOW](https://t.me/xenaNOW), or with email [partners@nowpayments.io](mailto:partners@nowpayments.io).
 
-If you have any questions , please contact us at support@nowpayments.io
+If you have any questions , please contact us at support@nowpayments.io.
 
